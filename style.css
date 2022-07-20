@@ -1,12 +1,21 @@
 * {
-  font-family: 'Nunito Sans';
   box-sizing: border-box;
+  font-family: "Luckiest Guy", "Nunito Sans";
+  letter-spacing: 6px;
 }
 
 body {
   margin: 0 auto;
   padding: 3px;
-  background-color: #fff;
+  background-color: #401885;
+  color: #fff;
+}
+h1 {
+  background-color: #04ca1d;
+  border: 15px ridge #26ff00e6;
+  border-radius: 15px;
+  font-size: 48px;
+  padding: 20px 20px 10px 20px;
 }
 
 .game-container {
@@ -17,7 +26,7 @@ body {
 
 header {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .rounds {
@@ -58,7 +67,7 @@ header {
 }
 
 .guess-label {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 700;
   margin: 0;
 }
@@ -67,6 +76,7 @@ header {
   font-size: 14px;
   font-weight: 700;
   margin: 0;
+  padding: 5px;
 }
 
 .target-guess {
@@ -77,17 +87,20 @@ header {
 }
 
 .computer-guess {
-  background-color: #ececec;
+  background-color: #d73563;
+  border: 30px ridge #ff0048;
+  border-radius: 15%;
 }
 
 #computer-guess {
   font-size: 50px;
   font-weight: 700;
-  color: #a5a5a5;
 }
 
 .human-guess {
-  border: 1px solid #979797;
+  background-color: #ff7060;
+  border: 30px ridge #f03d03;
+  border-radius: 15%;
 }
 
 .guess input {
@@ -105,13 +118,13 @@ header {
 }
 
 .number-control {
-  border: solid 1px #4c7ef3;
+  border: 2px solid #401885;
   display: inline-block;
   width: 45px;
   height: 35px;
   font-size: 24px;
   font-weight: 700;
-  color: #4c7ef3;
+  color: #401885;
   cursor: pointer;
 }
 
@@ -128,7 +141,7 @@ header {
 .right {
   border-top-right-radius: 22.5px;
   border-bottom-right-radius: 22.5px;
-  border-left-width: 0px;
+  border-left-width: 2px;
 }
 
 .controls {
@@ -137,34 +150,39 @@ header {
 }
 
 .button {
-  background-color: #4c7ef3;
-  color: #fff;
+  background-color: #fff;
+  border: 2px solid #401885;
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px #000000;
+  color: #401885;
   cursor: pointer;
 }
 
 #guess {
-  padding: 20px;
-  width: 169px;
-  height: 59px;
-  border: none;
+  border: 2px solid #401885;
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px #000000;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
+  height: 59px;
+  padding: 15px;
+  width: 169px;
 }
 
-input[type=number]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
 #next-round {
   width: 179px;
   height: 64px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
 }
-  
+
 .button[disabled] {
   background-color: #d2d2d2;
   color: #a0a0a0;
@@ -172,7 +190,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .instructions {
-  background-color: #ececec;
+  background-color: #04ca1d;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -185,11 +203,15 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .instructions h3 {
-  font-size: 14px;
+  font-size: 22px;
 }
 
+.instructions p {
+  font-size: 17px;
+}
 
-.winning-text, .winning-text[disabled] {
+.winning-text,
+.winning-text[disabled] {
   color: #ec3636;
   font-weight: 700;
 }
