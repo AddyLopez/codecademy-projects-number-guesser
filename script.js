@@ -25,9 +25,9 @@ const compareGuesses = (currentHumanGuess, computerGuess, target) => {
 };
 
 const updateScore = (winner) => {
-  if ((winner = "human")) {
+  if (winner === "human") {
     humanScore = humanScore + 1;
-  } else if ((winner = "computer")) {
+  } else if (winner === "computer") {
     computerScore = computerScore + 1;
   }
 };

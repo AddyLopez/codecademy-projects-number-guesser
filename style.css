@@ -44,11 +44,12 @@ header {
 
 .guess {
   min-width: 303px;
-  height: 328px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 19px;
+  padding: 15px;
+  margin: 15px;
 }
 
 .guessing-area {
@@ -93,7 +94,7 @@ header {
 }
 
 #computer-guess {
-  font-size: 50px;
+  font-size: 44px;
   font-weight: 700;
 }
 
@@ -104,12 +105,14 @@ header {
 }
 
 .guess input {
+  border: 2px solid purple;
+  border-radius: 15px;
+  font-size: 30px;
   height: 90px;
   width: 90px;
-  font-size: 30px;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 7px;
+  text-align: center;
 }
 
 .number-controls {
@@ -212,6 +215,15 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .winning-text,
 .winning-text[disabled] {
-  color: #ec3636;
+  color: #04ca1d;
   font-weight: 700;
+}
+
+h3::selection {
+  background: #fffd00;
+  color: #401885;
+}
+p::selection {
+  background: #fffd00;
+  color: #401885;
 }
